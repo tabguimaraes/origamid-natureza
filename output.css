@@ -397,6 +397,11 @@
       }
     }
   }
+  .max-md\:mb-12 {
+    @media (width < 48rem) {
+      margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
@@ -446,6 +451,11 @@
   .lg\:my-24 {
     @media (width >= 64rem) {
       margin-block: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:mb-12 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 12);
     }
   }
   .lg\:mb-24 {
