@@ -12,6 +12,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -175,8 +177,14 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -425,6 +433,11 @@
       line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
+  .lg\:my-8 {
+    @media (width >= 64rem) {
+      margin-block: calc(var(--spacing) * 8);
+    }
+  }
   .lg\:my-12 {
     @media (width >= 64rem) {
       margin-block: calc(var(--spacing) * 12);
@@ -493,6 +506,59 @@
   .lg\:pt-24 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:text-xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .xl\:my-12 {
+    @media (width >= 80rem) {
+      margin-block: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:my-24 {
+    @media (width >= 80rem) {
+      margin-block: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:w-\[385px\] {
+    @media (width >= 80rem) {
+      width: 385px;
+    }
+  }
+  .xl\:text-xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .\32 xl\:my-0 {
+    @media (width >= 96rem) {
+      margin-block: calc(var(--spacing) * 0);
+    }
+  }
+  .\32 xl\:my-12 {
+    @media (width >= 96rem) {
+      margin-block: calc(var(--spacing) * 12);
+    }
+  }
+  .\32 xl\:my-24 {
+    @media (width >= 96rem) {
+      margin-block: calc(var(--spacing) * 24);
+    }
+  }
+  .\32 xl\:mt-24 {
+    @media (width >= 96rem) {
+      margin-top: calc(var(--spacing) * 24);
+    }
+  }
+  .\32 xl\:text-xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
 }
